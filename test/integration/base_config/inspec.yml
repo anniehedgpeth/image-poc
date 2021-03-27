@@ -1,0 +1,14 @@
+name: base_config
+title: TFE Base Config Profile
+maintainer: TFE On-Prem
+copyright: TFE On-Prem
+copyright_email: team-tf-onprem@hashicorp.com
+license: Proprietary, All rights reserved
+summary: Verify that base prerequisites are configured on image so that image is prepared for a TFE installation
+version: 0.1.0
+supports:
+  - os-family: linux
+# depends:
+#   - name: linux-baseline
+#     git: https://github.com/dev-sec/linux-baseline
+#     version: 2.8.0

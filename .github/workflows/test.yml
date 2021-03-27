@@ -1,0 +1,1 @@
+# bundle exec cinc-auditor exec ./test/integration/base_config -t docker://whatever
