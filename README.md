@@ -1,7 +1,7 @@
 # image-poc
 
 ## Description
-Creates an image ready for a TFE installation.
+Creates a base image
 
 ## Ownership
 TF:OP
@@ -11,8 +11,8 @@ TF:OP
 To run config script locally:
 
 ```
-$ docker build -t tfebase:image_ci .
-$ docker run -d -i tfebase:image_ci
+$ docker build -t mybase:image_ci .
+$ docker run -d -i mybase:image_ci
 ``` 
 
 To run Packer locally:
