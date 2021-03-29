@@ -1,18 +1,37 @@
 # image-poc
+
 ## Description
 Creates an image ready for a TFE installation.
+
 ## Ownership
 TF:OP
+
 ## Build
-To run locally:
+
+To run config script locally:
+
+```
+$ docker build -t tfebase:image_ci .
+$ docker run -d -i tfebase:image_ci
+``` 
+
+To run Packer locally:
+
+```
+$ packer build ./Packerfile.pkr.hcl
+```
 
 ## Test
-To run tests against the image, use the inspec profiles in the cookbook. There are two ways to run tests:
-      
-### Prerequisites
--
+
+Run InSpec (cinc-auditor) against Docker container.
+
+```
+$ bundle install
+$ bundle exec cinc-auditor exec ./test/integration/base_config -t docker://<container id>
+```
 
 ## CI/CD
+
 ### Builds
 Upon each push, CI will be triggered to run on GitHub Actions.
 
