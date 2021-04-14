@@ -4,7 +4,7 @@ maintainer: Annie Hedgpeth
 copyright: Annie Hedgpeth
 copyright_email: me@me.com
 license: Proprietary, All rights reserved
-summary: Verify that base prerequisites are configured on image so that image
+summary: Verify that base prerequisites are configured on image
 version: 0.1.0
 supports:
   - os-family: linux
